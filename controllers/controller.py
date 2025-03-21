@@ -26,6 +26,7 @@ class Controller:
     datas = list(collection.find().skip(offset).limit(limit))
     for item in datas:
       item["_id"] = str(item["_id"])
+      item["dependencies"] = [str(dep) for dep in item.get("dependencies", [])]
     return {
       "datas": datas,
       "total_pages": total_pages
