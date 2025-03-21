@@ -1,0 +1,9 @@
+services:
+  server:
+    image: thaily/test
+    env_file:
+      - .env
+    port:
+      8000:8000
+    
+    
