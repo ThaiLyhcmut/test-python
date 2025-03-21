@@ -6,7 +6,7 @@ on:
 
 jobs:
   docker:
-      runs-on: ubuntu-lastes
+      runs-on: ubuntu-latest
       steps:
         - name: Checkout source code
           uses: actions/checkout@v4
